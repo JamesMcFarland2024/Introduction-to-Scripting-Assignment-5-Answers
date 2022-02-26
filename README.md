@@ -93,3 +93,40 @@ res = "".join(res)
  
 # printing result
 print("String after consonants removal : " + str(res))
+
+# Question 4 Part 1:
+num = int(input('How many numbers: '))
+total_sum = 0
+for n in range(num):
+    numbers = float(input('Enter number : '))
+    total_sum += numbers
+avg = total_sum/num
+print('Average of ', num, ' numbers is :', avg)
+import numpy as np
+ 
+# Taking a list of elements
+list = [290, 124, 127, 899]
+ 
+# Calculating standard deviation using var()
+print(np.std(list))
+
+# Question 4 Part 2:
+from operator import truediv
+# initializing lists 
+test_list1 = [3, 5, 2, 6, 4]
+test_list2 = [7, 3, 4, 1, 5]
+  
+# printing original lists 
+print ("The original list 1 is : " + str(test_list1))
+print ("The original list 2 is : " + str(test_list2))
+  
+# division of lists
+# using map()
+res = list(map(truediv, test_list1, test_list2))
+  
+# printing result
+print ("The division list is : " + str(res))
+
+# Question 5 Part 1:
+sentence = 'this is the string for the class'.title()
+print(sentence)
